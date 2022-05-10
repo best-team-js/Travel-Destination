@@ -1,4 +1,4 @@
-function Home(props){
+function Header(props){
     let colorMode="pink";
     return(
         <>
@@ -6,4 +6,4 @@ function Home(props){
         </>
     )
 }
-export default Home;
+export default Header;
