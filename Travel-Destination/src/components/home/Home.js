@@ -13,7 +13,7 @@ function Home() {
 {
     database.map(db => {
         return(
-            <Tours id={db.id} name={db.name} info={db.info} image={db.image}/>
+            <Tours  name={db.name} image={db.image}/>
         )
     })
 }
