@@ -1,7 +1,8 @@
-import Header from './components/Header';
-import Tours from './components/Tours';
-import Footer from './components/Footer';
-import database from './data/db.json';
+
+import Header from './components/header/Header';
+import Tours from './src/components/tours/Tours';
+import Footer from './src/components/footer/Footer';
+import database from './src/data/db.json';
 
 function Home() {
     return(
