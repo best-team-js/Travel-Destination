@@ -9,7 +9,6 @@ function Home() {
     <>
 <Header/>
 <Tours/>
-<Footer/>
 
 {
     database.map(db => {
@@ -18,6 +17,8 @@ function Home() {
         )
     })
 }
+
+<Footer/>
     </>
     )
 }

@@ -3,7 +3,7 @@ function Tours(props){
     return(
         <>
         <div>
-            <p>{props.name}</p>
+            <h2>{props.name}</h2>
             <img src={props.image} alt={props.info}/>
         </div>
         </>
