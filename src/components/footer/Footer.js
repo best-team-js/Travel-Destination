@@ -1,4 +1,4 @@
-function Footer(props)
+function Footer()
 {  let urlFacebook="https://web.facebook.com/habosh.ana.77";
     let urlLinkedin="https://www.linkedin.com/feed/";
     return(
