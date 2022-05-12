@@ -1,4 +1,4 @@
-import Tour from './Tour/Tour';
+import Tour from './tour/Tour';
 
 import {Link} from 'react-router-dom';
 function Tours(props){

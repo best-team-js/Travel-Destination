@@ -1,4 +1,4 @@
-import './TourDetails.css';
+
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import { useParams } from 'react-router-dom';
@@ -18,17 +18,16 @@ export default function TourDetails(props){
     return (
         <>
             <Header />
-            <div className='tourDetailsCards'>            
+            <div>            
             <h2 id='name'> {infoData[0].name} </h2> 
              <p id='paragraph' >
              {isShown ? infoData[0].info : `${infoData[0].info.substring(0, 250)}`}
              {isShown? <button onClick={clickhandle}>see less</button>:<button onClick={clickhandle}>see more</button> } 
              </p>
    
-            <h4 id='price'> {`${infoData[0].price} $`}</h4>
-            <img  src={infoData[0].image} />
+            <h4> {`${infoData[0].price} $`}</h4>
+            <img  src={infoData[0].image} alt=""/>
             </div>
-
             <Footer/>
         </>
     )
