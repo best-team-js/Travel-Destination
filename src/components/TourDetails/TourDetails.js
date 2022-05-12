@@ -19,8 +19,8 @@ export default function TourDetails(props){
         <>
             <Header />
             <div>            
-            <h2 id='name'> {infoData[0].name} </h2> 
-             <p id='paragraph' >
+            <h2 > {infoData[0].name} </h2> 
+             <p>
              {isShown ? infoData[0].info : `${infoData[0].info.substring(0, 250)}`}
              {isShown? <button onClick={clickhandle}>see less</button>:<button onClick={clickhandle}>see more</button> } 
              </p>
