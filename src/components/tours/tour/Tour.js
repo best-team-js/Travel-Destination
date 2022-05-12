@@ -1,10 +1,12 @@
-function Tour(props){
-    return(
+
+function Tour(props) {
+    return (
         <>
-        <div>
-            <p>{props.name}</p>
-            <img src={props.image} alt={props.info}/>
-        </div>
+            <div>
+                <p>{props.dataWithKey.name}</p>
+                <img src={props.dataWithKey.image} alt="seen" />
+               
+            </div>
         </>
     )
 }

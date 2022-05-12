@@ -1,19 +1,21 @@
 // import logo from './logo.svg';
-import './App.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from './components/home/Home';
-import Tour from './components/tours/tour/Tour';
+import Navbar from "./components/Navbar/Navba";
+import TourDetails from './components/TourDetails/TourDetails';
+const travelData=require("./data/db.json");
+
 
 function App() {
   return (
     <>
-      <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/city/:id" element={<Tour/>}/>
-      </Routes>
-      <Home/>
-      
-      </>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element= {<Home data={travelData}/>}/>
+      <Route path='/city/:id' element= {<TourDetails data={travelData}/>}/>
+    </Routes>
+    
+    </>
   );
 }
 

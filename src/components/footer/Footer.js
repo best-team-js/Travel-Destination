@@ -8,6 +8,7 @@ function Footer(props)
         <br/>
         <a href={urlLinkedin}>LinkedIn</a>
         <p style={{color:"purble"}}><h2>Authors:</h2>HebaAlhamaydah saraAltayeh</p>
+        <p>© copyright all rights reserved </p>
         </>
     )
 }
