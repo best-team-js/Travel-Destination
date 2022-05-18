@@ -10,6 +10,7 @@ function NavBar(){
         <Link to="/city/:id">Tour</Link>
         </nav>
         </>
+        
     )
 }
 
